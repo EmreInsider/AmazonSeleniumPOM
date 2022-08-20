@@ -21,6 +21,3 @@ class BasePage(object):
 
     def wait_element(self, method, message=''):
         return self.wait.until(ec.element_to_be_clickable(method), message)
-
-    def find_elements(self, index, *locator):
-        self.driver.find_elements(*locator)[index].click()

@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 from pages.base_page import BasePage
@@ -16,6 +18,7 @@ class LoginPage(BasePage):
         self.click_element(*self.CONTINUE_BTN)
 
     def fill_password_text_box(self, password):
+        time.sleep(2)
         self.send_text(password, *self.PASSWORD_TEXT_BOX)
 
     def click_submit_btn(self):
