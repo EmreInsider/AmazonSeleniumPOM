@@ -1,5 +1,3 @@
-import time
-
 from pages.home_page import HomePage
 from tests.base_test import BaseTest
 
